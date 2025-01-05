@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body class="rajdhani-regular">
+  <a href="#head" class="bg-pink-400 z-50 rounded-md px-3 py-2 fixed bottom-4 right-4">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+  <header class="pt-10" id="head">
+    <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 bg-white px-8 lg:px-52">
+      <div><img src="./assets/images/logo.png" alt="" /></div>
+      <div class="flex flex-col gap-2 lg:gap-0 w-full lg:w-[35vw]">
+        <div class="w-full flex">
+          <input placeholder="find your perfect domain name" type="text"
+            class="p-2 flex-1 w-full border border-[#00000030]" />
+          <button class="bg-[#4994cde6] p-2 font-semibold text-white">
+            FIND DOMAIN
+          </button>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 w-full divide-x gap-2 py-2 text-[#4994cd]">
+          <div class="flex gap-2 items-center px-4 w-full flex-1">
+            <img class="w-auto h-4" src="./assets/images/i1.png" alt="" />
+            <span>$9.90</span>
+          </div>
+          <div class="flex gap-2 items-center px-4 w-full flex-1">
+            <img class="w-auto h-4" src="./assets/images/i2.png" alt="" />
+            <span>$9.90</span>
+          </div>
+          <div class="flex gap-2 items-center px-4 w-full flex-1">
+            <img class="w-auto h-4" src="./assets/images/i3.png" alt="" />
+            <span>$9.90</span>
+          </div>
+          <div class="flex gap-2 items-center px-4 w-full flex-1">
+            <img class="w-auto h-4" src="./assets/images/i4.png" alt="" />
+            <span>$9.90</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex text-[#00000050] text-sm gap-8 bg-white py-2 lg:py-0 px-8 lg:px-52">
+      <div class="flex gap-2 items-center">
+        <i class="fa-solid fa-globe"></i>
+        <span>english</span>
+      </div>
+      <div class="flex gap-2 items-center">
+        <i class="fa-solid fa-phone"></i>
+        <span>1-800-123-4567</span>
+      </div>
+      <div class="flex gap-2 items-center">
+        <i class="fa-solid fa-headphones"></i>
+        <span>Live Chat</span>
+      </div>
+      <div class="flex gap-2 items-center">
+        <i class="fa-solid fa-life-ring"></i>
+        <span>help</span>
+      </div>
+    </div>
+    <nav class="flex items-center relative justify-between uppercase font-semibold bg-[#4994cd] px-8 lg:px-52 text-sm text-white">
+      <button class="flex lg:hidden text-white text-3xl"><i class="fa-solid fa-bars"></i></button>
+      <ul class=" hidden z-50 lg:flex space-x-12 py-5 ">
+        <li id="homebtn" class="relative">home
+          <ul id="homemenu" class="hidden absolute shadow text-black bg-white divide-y w-44 top-10 left-0">
+            <li class="p-3">Homepage 1</li>
+            <li class="p-3">Homepage 1</li>
+            <li class="p-3">Homepage 1</li>
+          </ul>
+        </li>
+        <li id="sharebtn">shared</li>
+        <li>vps</li>
+        <li>Dedicated</li>
+        <li>other services</li>
+        <li>blog</li>
+        <li>Meet Us</li>
+        <li>Pages</li>
+        <li>Elements</li>
+
+        <ul id="sharemenu"
+          class="hidden absolute right-52 top-[3.8rem] flex w-[72vw] bg-white shadow text-[#00000050] px-4 py-8">
+          <li class="w-4/12">
+            <ul class="flex flex-col gap-8">
+              <li class="flex divide-x items-center justify-center gap-2">
+                <span
+                  class="bg-[#00000030] h-12 w-12 rounded-full text-2xl text-white flex items-center justify-center"><i
+                    class="fa-solid fa-cubes"></i></span>
+                <div class="flex flex-col px-2">
+                  <span class="text-black font-semibold">Basic Plan</span>
+                  <span>Perfect for Simple website</span>
+                </div>
+              </li>
+              <li class="flex divide-x items-center justify-center gap-2">
+                <span
+                  class="bg-[#00000030] h-12 w-12 rounded-full text-2xl text-white flex items-center justify-center"><i
+                    class="fa-solid fa-cubes"></i></span>
+                <div class="flex flex-col px-2">
+                  <span class="text-black font-semibold">Basic Plan</span>
+                  <span>Perfect for Simple website</span>
+                </div>
+              </li>
+              <li class="flex divide-x items-center justify-center gap-2">
+                <span
+                  class="bg-[#00000030] h-12 w-12 rounded-full text-2xl text-white flex items-center justify-center"><i
+                    class="fa-solid fa-cubes"></i></span>
+                <div class="flex flex-col px-2">
+                  <span class="text-black font-semibold">Basic Plan</span>
+                  <span>Perfect for Simple website</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="w-2/12">
+            <ul class="flex flex-col gap-4">
+              <span class="text-black font-semibold">Other Services</span>
+              <li>Data migration
+              <li>Server management</li>
+              <li>Manage backup</li>
+              <li> DDos protection</li>
+            </ul>
+          </li>
+          <li class="w-2/12">
+            <ul class="flex flex-col gap-4">
+              <span class="text-black font-semibold">Support</span>
+              <li>Contact</li>
+              <li>Knowledgebase</li>
+              <li>Community Forum</li>
+              <li>Report Abuse</li>
+            </ul>
+          </li>
+          <li class="w-4/12 flex flex-col gap-4">
+            <h1 class="text-black font-semibold">Why use Altis Hosting?</h1>
+            <p>At Altis, we constantly strive to deliver total customer satisfaction with all our hosting services.
+              That's why we offer fast, reliable and secure service that's backed by our friendly, knowledgeable support
+              team, 24/7.</p>
+          </li>
+        </ul>
+
+
+      </ul>
+      <button class="bg-[#dc5980] flex items-center gap-2 h-full py-5 px-4 uppercase">
+        <i class="fa-solid fa-user"></i>
+        <span>customer portal</span></button>
+    </nav>
+  </header>
+
+  <!-------------------------------HERO SECTION ------------------------------------------>
+
+  <section class="relative">
+    <div class="owl-carousel h-[70vh]">
+      <!-- Slide 1 -->
+      <div
+        class="flex justify-center items-center h-[70vh] px-4 lg:px-40 py-10 w-full object-cover bg-[#4994cda6] bg-[url('https://indonez.com/html-demo/altis/images/sample/slideshow/slideshow-pattern.png')]">
+        <div class="w-ful lg:w-1/2 flex flex-col gap-4">
+          <span class="text-4xl font-bold">Integrated cloud solution for any business & individual.</span>
+          <span class="text-2xl font-semibold">Sertifikat SSL adalah seperti penjaga keamanan online yang tidak pernah
+            beristirahat.</span>
+          <span class="flex flex-col">
+            <span class="font-light text-[18px]">Start from</span>
+            <span class="font-bold text-3xl">$45/year</span>
+          </span>
+          <button class="px-4 py-1 border-[#dc5980] border-[3px] w-fit text-[#dc5980] font-bold text-2xl">
+            Start now!
+          </button>
+        </div>
+        <div class="hidden lg:flex w-1/2">
+          <img src="https://indonez.com/html-demo/altis/images/sample/slideshow/cloud.png" alt="">
+        </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div
+        class="flex justify-center items-center h-[70vh] px-4 lg:px-40 py-10 w-full object-cover bg-[#4994cda6] bg-[url('https://indonez.com/html-demo/altis/images/sample/slideshow/sld2.jpg')]">
+        <div class="md:w-1/2 flex flex-col gap-4">
+          <span class="text-4xl font-bold">Integrated cloud solution for any business & individual.</span>
+          <span class="text-2xl font-semibold">Sertifikat SSL adalah seperti penjaga keamanan online yang tidak pernah
+            beristirahat.</span>
+          <span class="flex flex-col">
+            <span class="font-light text-[18px]">Start from</span>
+            <span class="font-bold text-3xl">$45/year</span>
+          </span>
+          <button class="px-4 py-1 border-[#dc5980] border-[3px] w-fit text-[#dc5980] font-bold text-2xl">
+            Start now!
+          </button>
+        </div>
+        <div class="hidden lg:flex w-1/2">
+          <img src="https://indonez.com/html-demo/altis/images/sample/slideshow/cloud.png" alt="">
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div
+        class="flex justify-center items-center h-[70vh] px-4 lg:px-40 py-10 w-full object-cover bg-[#4994cda6] bg-[url('https://indonez.com/html-demo/altis/images/sample/slideshow/sld_object1.png/')]">
+        <div class="md:w-1/2 flex flex-col gap-4">
+          <span class="text-4xl font-bold">Integrated cloud solution for any business & individual.</span>
+          <span class="text-2xl font-semibold">Sertifikat SSL adalah seperti penjaga keamanan online yang tidak pernah
+            beristirahat.</span>
+          <span class="flex flex-col">
+            <span class="font-light text-[18px]">Start from</span>
+            <span class="font-bold text-3xl">$45/year</span>
+          </span>
+          <button class="px-4 py-1 border-[#dc5980] border-[3px] w-fit text-[#dc5980] font-bold text-2xl">
+            Start now!
+          </button>
+        </div>
+        <div class="hidden lg:flex w-1/2">
+          <img src="https://indonez.com/html-demo/altis/images/sample/slideshow/cloud.png" alt="">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Navigation Buttons -->
+    <div
+      class="absolute bottom-4 bg-[#00000060] transform left-1/2 -translate-x-1/2 text-white p-2 z-50 flex gap-2 text-[12px] items-center justify-center">
+      <i class="fa-regular fa-square-full nav-btn" data-slide="0"></i>
+      <i class="fa-regular fa-square-full nav-btn" data-slide="1"></i>
+      <i class="fa-regular fa-square-full nav-btn" data-slide="2"></i>
+    </div>
+  </section>
+  
+  <!-------------------------------OUR PLAN SECTION ------------------------------------------>
+
+  <section class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 lg:gap-10 py-4 px-4 md:px-0 bg-gray-100 w-full">
+    <div class="text-center w-full border-b md:border-none border-[#00000060]">
+      <h4>All our plans include over </h4>
+      <h1 class="font-bold text-2xl">$500 in extras </h1>
+    </div>
+
+    <span class="relative hidden md:block z-10 h-[5rem] w-[0.5px] bg-[#4994cd] text-[#4994cd]">
+      <i
+        class="absolute z-20 top-1/2 bg-white -translate-x-1/2 transform -translate-y-1/2 fa-solid fa-circle-chevron-right"></i>
+    </span>
+
+    <div>
+      <img src="./assets/images/wordpress.png" alt="">
+      <h1>FREE <span>building tools</span></h1>
+    </div>
+
+    <div>
+      <img src="./assets/images/google.png" alt="">
+      <h1>$100 <span>AdWords offer</span></h1>
+    </div>
+
+    <div>
+      <img src="./assets/images/bing.png" alt="">
+      <h1>$100 <span>ad credits</span></h1>
+    </div>
+
+    <div>
+      <img src="./assets/images/lock.png" alt="">
+      <h1>FREE <span> security tools</span></h1>
+    </div>
+
+    <div>
+      <img src="./assets/images/cloud.png" alt="">
+      <h1>FREE <span>1GB storage</span></h1>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="py-10 px-8 lg:px-48">
+      <div class="text-center mb-10">
+        <h2 class="text-blue-500 font-semibold text-lg">A blazing fast hosting solution</h2>
+        <h1 class="text-4xl font-bold mt-2">Meet our web hosting plan</h1>
+      </div>
+      <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Shared Hosting -->
+        <div class="relative">
+          <div class="z-20 absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-3">
+            <div class="bg-[#4994cd] p-4 rounded-full text-white text-4xl">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+          </div>
+          <div class="z-10 overflow-hidden relative bg-white border-2 border-[#4994cd] p-6">
+
+
+            <div class="flex items-center mb-4">
+              <h3 class="text-2xl font-bold">Shared <span class="font-medium text-[18px] text-blue-500">hosting</span>
+              </h3>
+            </div>
+
+            <p class="text-gray-600 mb-6">Better architecture. Better support. Altis Shared Grid is better shared
+              hosting.
+            </p>
+            <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
+            <div class="absolute text-[#00000010] -bottom-14 -right-10 text-[150px]">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2">&#9872;</span> free domain
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2">&#128202;</span> 50 database
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2">&#128225;</span> 500GB bandwidth
+              </li>
+
+            </ul>
+            <button class="mt-6 w-fit px-4 font-bold bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Learn More
+              &rarr;</button>
+          </div>
+        </div>
+        <!-- VPS Hosting -->
+        <div class="relative bg-white border-2 border-[#dc5980] p-6">
+          <div class="absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-4">
+            <div class="bg-[#dc5980] p-4 rounded-full text-white text-4xl">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <h3 class="text-2xl font-bold">Shared <span class="font-medium text-[18px] text-blue-500">hosting</span>
+            </h3>
+          </div>
+
+          <p class="text-gray-600 mb-6">Better architecture. Better support. Altis Shared Grid is better shared hosting.
+          </p>
+          <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
+
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-center">
+              <span class="text-blue-500 mr-2">&#9872;</span> free domain
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-500 mr-2">&#128202;</span> 50 database
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-500 mr-2">&#128225;</span> 500GB bandwidth
+            </li>
+          </ul>
+          <button class="mt-6 w-fit px-4 font-bold bg-[#dc5980] text-white py-2 rounded hover:bg-blue-600">Learn More
+            &rarr;</button>
+        </div>
+        <!-- Dedicated Hosting -->
+        <div class="relative bg-white border-2 border-[#4994cd] p-6">
+          <div class="absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-4">
+            <div class="bg-[#4994cd] p-4 rounded-full text-white text-4xl">
+              <i class="fa-solid fa-bars-progress"></i>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <h3 class="text-2xl font-bold">Shared <span class="font-medium text-[18px] text-blue-500">hosting</span>
+            </h3>
+          </div>
+
+          <p class="text-gray-600 mb-6">Better architecture. Better support. Altis Shared Grid is better shared hosting.
+          </p>
+          <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
+
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-center">
+              <span class="text-blue-500 mr-2">&#9872;</span> free domain
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-500 mr-2">&#128202;</span> 50 database
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-500 mr-2">&#128225;</span> 500GB bandwidth
+            </li>
+          </ul>
+          <button class="mt-6 w-fit px-4 font-bold bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Learn More
+            &rarr;</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="flex flex-col gap-5 md:gap-0 md:flex-row px-4 lg:px-48 py-5">
+    <div class="flex flex-col gap-4 md:w-1/2">
+      <span class="font-bold text-4xl text-gray-900">Powerfull Server Specs</span>
+      <span class="text-blue-400 text-xl">Quidem rerum facilis est et expedita distinctio nam libero cum soluta nobis
+        eligendi cumque impedit
+        minus.</span>
+      <div class="flex gap-4">
+        <img src="https://indonez.com/html-demo/altis/images/sample/logo/processor.png" alt="">
+        <div class="flex relative flex-col gap-4 text-gray-700">
+          <span
+            class="before:content-['\f05d'] before:text-[15px] before:text-gray-500 before:absolute before:left-0 ms-5 before:text-gray-700 before:font-['FontAwesome']">Processor
+            Xeon E7-8891 v4</span>
+          <span
+            class="before:content-['\f05d'] before:text-[15px] before:text-gray-500 before:absolute before:left-0 ms-5 before:text-gray-700 before:font-['FontAwesome']">Clock
+            speed 6 x 2.8GHz</span>
+          <span
+            class="before:content-['\f05d'] before:text-[15px] before:text-gray-500 before:absolute before:left-0 ms-5 before:text-gray-700 before:font-['FontAwesome']">RAM
+            size 64GB DDR4 ECC</span>
+          <span
+            class="before:content-['\f05d'] before:text-[15px] before:text-gray-500 before:absolute before:left-0 ms-5 before:text-gray-700 before:font-['FontAwesome']">Storage
+            size 12 TB SSD</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="md:w-1/2">
+      <img src="https://indonez.com/html-demo/altis/images/sample/slideshow/cloud-server.png" alt="">
+    </div>
+  </section>
+
+
+  <section class="z-10 relative bg-[url('https://indonez.com/html-demo/altis/images/sample/bg-parallax1.jpg')]">
+    <div class="flex flex-col items-center gap-10 py-20 bg-[#007fff95]">
+      <div class="z-30 text-center">
+        <p class="text-sm text-white">Comprehensive tools and training help</p>
+        <p class="text-4xl font-bold text-white">All the tools you need to succees</p>
+      </div>
+      <div class="flex flex-col md:flex-row items-start gap-4 md:px-48">
+        <div class="flex gap-6 flex-col items-center justify-center text-white md:w-1/4 md:border-r-[1px] border-white">
+          <div class="border-2 border-white rounded-full h-20 w-20 flex items-center justify-center text-4xl">
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+          <div class="font-bold text-2xl">
+            Design it your way
+          </div>
+          <div class="flex relative flex-col gap-4">
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Large
+              selection of templates</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Powerful
+              website builder</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Blogs,
+              including WordPress</span>
+          </div>
+        </div>
+        <div class="flex gap-6 flex-col items-center justify-center text-white md:w-1/4 md:border-r-[1px] border-white">
+          <div class="border-2 border-white rounded-full h-20 w-20 flex items-center justify-center text-4xl">
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+          <div class="font-bold text-2xl">
+            Design it your way
+          </div>
+          <div class="flex relative flex-col gap-4">
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Large
+              selection of templates</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Powerful
+              website builder</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Blogs,
+              including WordPress</span>
+          </div>
+        </div>
+        <div class="flex gap-6 flex-col items-center justify-center text-white md:w-1/4 md:border-r-[1px] border-white">
+          <div class="border-2 border-white rounded-full h-20 w-20 flex items-center justify-center text-4xl">
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+          <div class="font-bold text-2xl">
+            Design it your way
+          </div>
+          <div class="flex relative flex-col gap-4">
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Large
+              selection of templates</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Powerful
+              website builder</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Blogs,
+              including WordPress</span>
+          </div>
+        </div>
+        <div class="flex gap-6 flex-col items-center justify-center text-white md:w-1/4"md:>
+          <div class="border-2 border-white rounded-full h-20 w-20 flex items-center justify-center text-4xl">
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+          <div class="font-bold text-2xl">
+            Design it your way
+          </div>
+          <div class="flex relative flex-col gap-4">
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Large
+              selection of templates</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Powerful
+              website builder</span>
+            <span
+              class="before:content-['\f05d'] before:text-[15px] before:absolute before:left-0 ms-5 before:font-['FontAwesome']">Blogs,
+              including WordPress</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <button class="flex gap-2 text-white border-2 border-white py-2 px-4 font-bold items-center">
+          <span>See All Features</span>
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+        <button class="flex gap-2 bg-[#dc5980] text-white py-3 px-4 font-bold items-center">
+          <span>Signup now!</span>
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col gap-14 items-center py-12">
+    <h1 class="text-4xl text-center font-bold">See why our customers love using Altis</h1>
+
+    <!-- <div class="">testimonial-carousel -->
+    <div class="mx-10 md:mx-96 ">
+
+      <div class="relative flex flex-col items-center gap-4  border-2 border-pink-500 text-black p-10">
+        <div class="absolute -top-8 -left-8">
+          <div class="bg-white p-4">
+            <img src="https://indonez.com/html-demo/altis/images/sample/people2.jpg" class="h-24 w-24 rounded-full"
+              alt="">
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="font-bold text-2xl">Thomas Sims</h1>
+          <h2 class="text-blue-400 text-lg">Online Shop</h2>
+        </div>
+        <p class="font-bold text-2xl text-center text-gray-400">Altis Hosting by far the best company I have used to
+          handle my Web
+          site and software development needs. They
+          are responsive, professional and attentive.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Header Section -->
+  <section class="bg-pink-500 text-center py-10">
+    <h1 class="text-2xl md:text-4xl font-bold mb-4">Start Building Your Website Today!</h1>
+    <p class="text-xl md:text-2xl font-semibold">Starting At Only <span
+        class="bg-blue-600 text-white px-3 py-1 rounded-full">4.99/month</span></p>
+    <button class="mt-5 bg-white text-pink-500 font-semibold px-6 py-2 rounded-md hover:bg-pink-100">GET
+      STARTED!</button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#2e3234] text-gray-300 px-4 md:px-48">
+    <div class="container mx-auto px-5 py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Company Column -->
+      <div>
+        <h2 class="text-lg font-semibold text-white mb-4">COMPANY</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Contact Us</a></li>
+          <li><a href="#" class="hover:text-white">Term of Services</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Company Blog</a></li>
+          <li><a href="#" class="hover:text-white">Site Map</a></li>
+        </ul>
+      </div>
+
+      <!-- Support Column -->
+      <div>
+        <h2 class="text-lg font-semibold text-white mb-4">SUPPORT</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Knowledge Center</a></li>
+          <li><a href="#" class="hover:text-white">Support Forum</a></li>
+          <li><a href="#" class="hover:text-white">API Documentation</a></li>
+          <li><a href="#" class="hover:text-white">Support Home</a></li>
+          <li><a href="#" class="hover:text-white">Developer Center</a></li>
+        </ul>
+      </div>
+
+      <!-- Order Column -->
+      <div>
+        <h2 class="text-lg font-semibold text-white mb-4">ORDER</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Billing Enquiry</a></li>
+          <li><a href="#" class="hover:text-white">Order Look-Up</a></li>
+          <li><a href="#" class="hover:text-white">Auto Renewal</a></li>
+          <li><a href="#" class="hover:text-white">Custom Services</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Social Links -->
+      <div class="flex flex-col justify-center gap-4 mb-4 w-fit">
+        <button href="#" class="bg-[#ffffff30] px-4 text-white">
+          <div class="flex gap-2 items-center">
+            <i class="text-4xl fa-brands fa-square-facebook"></i>
+            <div class="flex items-start flex-col">
+              <span class="text-sm mt-2">Check out our</span>
+              <span class="text-xl mb-2 uppercase font-bold">Facebook</span>
+            </div> 
+          </div>
+        </button>
+        <button href="#" class="bg-[#ffffff30] px-4 w-full text-white">
+          <div class="flex gap-2 items-center">
+            <i class="text-4xl fa-brands fa-square-twitter"></i>
+            <div class="flex items-start flex-col">
+              <span class="text-sm mt-2">Check out our</span>
+              <span class="text-xl mb-2 uppercase font-bold">Twitter</span>
+            </div> 
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class=" mt-6 py-6 text-center">
+      <p class="text-2xl">Proudly hosting over <span class="text-blue-400">800,000 </span>websites since 2007</p>
+      <p class="text-sm">COPYRIGHT © 2016 ALTISHOST INC.</p>
+    </div>
+  </footer>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/owl.js"></script>
+</body>
+
+</html>
