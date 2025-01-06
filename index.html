@@ -22,7 +22,7 @@
 </head>
 
 <body class="rajdhani-regular">
-  <a href="#head" class="bg-pink-400 z-50 rounded-md px-3 py-2 fixed bottom-4 right-4">
+  <a href="#head" class="bg-blue-400 z-50 text-2xl text-white px-3 py-2 fixed bottom-4 right-4">
     <i class="fa-solid fa-chevron-up"></i>
   </a>
   <header class="pt-10" id="head">
@@ -74,7 +74,8 @@
         <span>help</span>
       </div>
     </div>
-    <nav class="flex items-center relative justify-between uppercase font-semibold bg-[#4994cd] px-8 lg:px-52 text-sm text-white">
+    <nav
+      class="flex items-center relative justify-between uppercase font-semibold bg-[#4994cd] px-8 lg:px-52 text-sm text-white">
       <button class="flex lg:hidden text-white text-3xl"><i class="fa-solid fa-bars"></i></button>
       <ul class=" hidden z-50 lg:flex space-x-12 py-5 ">
         <li id="homebtn" class="relative">home
@@ -183,7 +184,7 @@
           <img src="https://indonez.com/html-demo/altis/images/sample/slideshow/cloud.png" alt="">
         </div>
       </div>
-  
+
       <!-- Slide 2 -->
       <div
         class="flex justify-center items-center h-[70vh] px-4 lg:px-40 py-10 w-full object-cover bg-[#4994cda6] bg-[url('https://indonez.com/html-demo/altis/images/sample/slideshow/sld2.jpg')]">
@@ -203,7 +204,7 @@
           <img src="https://indonez.com/html-demo/altis/images/sample/slideshow/cloud.png" alt="">
         </div>
       </div>
-  
+
       <!-- Slide 3 -->
       <div
         class="flex justify-center items-center h-[70vh] px-4 lg:px-40 py-10 w-full object-cover bg-[#4994cda6] bg-[url('https://indonez.com/html-demo/altis/images/sample/slideshow/sld_object1.png/')]">
@@ -224,7 +225,7 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Navigation Buttons -->
     <div
       class="absolute bottom-4 bg-[#00000060] transform left-1/2 -translate-x-1/2 text-white p-2 z-50 flex gap-2 text-[12px] items-center justify-center">
@@ -233,10 +234,11 @@
       <i class="fa-regular fa-square-full nav-btn" data-slide="2"></i>
     </div>
   </section>
-  
+
   <!-------------------------------OUR PLAN SECTION ------------------------------------------>
 
-  <section class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 lg:gap-10 py-4 px-4 md:px-0 bg-gray-100 w-full">
+  <section
+    class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 lg:gap-10 py-4 px-4 md:px-0 bg-gray-100 w-full">
     <div class="text-center w-full border-b md:border-none border-[#00000060]">
       <h4>All our plans include over </h4>
       <h1 class="font-bold text-2xl">$500 in extras </h1>
@@ -281,6 +283,8 @@
         <h1 class="text-4xl font-bold mt-2">Meet our web hosting plan</h1>
       </div>
       <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
         <!-- Shared Hosting -->
         <div class="relative">
           <div class="z-20 absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-3">
@@ -305,13 +309,13 @@
             </div>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-center">
-                <span class="text-blue-500 mr-2">&#9872;</span> free domain
+                <span class="text-blue-500 mr-2"><i class="fa-solid fa-flag"></i></span> free domain
               </li>
               <li class="flex items-center">
-                <span class="text-blue-500 mr-2">&#128202;</span> 50 database
+                <span class="text-blue-500 mr-2"><i class="fa-solid fa-database"></i></span> 50 database
               </li>
               <li class="flex items-center">
-                <span class="text-blue-500 mr-2">&#128225;</span> 500GB bandwidth
+                <span class="text-blue-500 mr-2"><i class="fa-solid fa-gauge"></i></span> 500GB bandwidth
               </li>
 
             </ul>
@@ -320,65 +324,83 @@
           </div>
         </div>
         <!-- VPS Hosting -->
-        <div class="relative bg-white border-2 border-[#dc5980] p-6">
-          <div class="absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-4">
-            <div class="bg-[#dc5980] p-4 rounded-full text-white text-4xl">
+        <div class="relative">
+          <div class="z-20 absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-3">
+            <div class="bg-pink-500 p-4 rounded-full text-white text-4xl">
               <i class="fa-solid fa-cube"></i>
             </div>
           </div>
-          <div class="flex items-center mb-4">
-            <h3 class="text-2xl font-bold">Shared <span class="font-medium text-[18px] text-blue-500">hosting</span>
-            </h3>
+          <div class="z-10 overflow-hidden relative bg-white border-2 border-pink-500 p-6">
+
+
+            <div class="flex items-center mb-4">
+              <h3 class="text-2xl font-bold">VPS <span class="font-medium text-[18px] text-pink-500">hosting</span>
+              </h3>
+            </div>
+
+            <p class="text-gray-600 mb-6">Professional-grade virtual private servers, with your choice of control panel.
+            </p>
+            <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
+            <div class="absolute text-[#00000010] -bottom-14 -right-10 text-[150px]">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-center">
+                <span class="text-pink-500 mr-2"><i class="fa-solid fa-flag"></i></span> free domain
+              </li>
+              <li class="flex items-center">
+                <span class="text-pink-500  mr-2"><i class="fa-solid fa-database"></i></span> 50 database
+              </li>
+              <li class="flex items-center">
+                <span class="text-pink-500 mr-2"><i class="fa-solid fa-gauge"></i></span> 500GB bandwidth
+              </li>
+
+            </ul>
+            <button class="mt-6 w-fit px-4 font-bold bg-pink-500 text-white py-2 rounded hover:bg-pink-600">Learn More
+              &rarr;</button>
           </div>
-
-          <p class="text-gray-600 mb-6">Better architecture. Better support. Altis Shared Grid is better shared hosting.
-          </p>
-          <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
-
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-center">
-              <span class="text-blue-500 mr-2">&#9872;</span> free domain
-            </li>
-            <li class="flex items-center">
-              <span class="text-blue-500 mr-2">&#128202;</span> 50 database
-            </li>
-            <li class="flex items-center">
-              <span class="text-blue-500 mr-2">&#128225;</span> 500GB bandwidth
-            </li>
-          </ul>
-          <button class="mt-6 w-fit px-4 font-bold bg-[#dc5980] text-white py-2 rounded hover:bg-blue-600">Learn More
-            &rarr;</button>
         </div>
+
+
         <!-- Dedicated Hosting -->
-        <div class="relative bg-white border-2 border-[#4994cd] p-6">
-          <div class="absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-4">
+        <div class="relative">
+          <div class="z-20 absolute right-0 top-0 transform translate-x-8 -translate-y-8 bg-white p-3">
             <div class="bg-[#4994cd] p-4 rounded-full text-white text-4xl">
               <i class="fa-solid fa-bars-progress"></i>
             </div>
           </div>
-          <div class="flex items-center mb-4">
-            <h3 class="text-2xl font-bold">Shared <span class="font-medium text-[18px] text-blue-500">hosting</span>
-            </h3>
+          <div class="z-10 overflow-hidden relative bg-white border-2 border-[#4994cd] p-6">
+
+
+            <div class="flex items-center mb-4">
+              <h3 class="text-2xl font-bold">Dedicated<span class="font-medium text-[18px] text-blue-500">hosting</span>
+              </h3>
+            </div>
+
+            <p class="text-gray-600 mb-6">Get the most out of your Cloud, fully managed by certified SysAdmins Architect.
+            </p>
+            <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
+            <div class="absolute text-[#00000010] -bottom-14 -right-10 text-[150px]">
+              <i class="fa-solid fa-bars-progress"></i>
+            </div>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2"><i class="fa-solid fa-flag"></i></span> free domain
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2"><i class="fa-solid fa-database"></i></span> 50 database
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2"><i class="fa-solid fa-gauge"></i></span> 500GB bandwidth
+              </li>
+
+            </ul>
+            <button class="mt-6 w-fit px-4 font-bold bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Learn More
+              &rarr;</button>
           </div>
-
-          <p class="text-gray-600 mb-6">Better architecture. Better support. Altis Shared Grid is better shared hosting.
-          </p>
-          <div class="w-full h-[0.5px] bg-blue-500 mb-4"></div>
-
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-center">
-              <span class="text-blue-500 mr-2">&#9872;</span> free domain
-            </li>
-            <li class="flex items-center">
-              <span class="text-blue-500 mr-2">&#128202;</span> 50 database
-            </li>
-            <li class="flex items-center">
-              <span class="text-blue-500 mr-2">&#128225;</span> 500GB bandwidth
-            </li>
-          </ul>
-          <button class="mt-6 w-fit px-4 font-bold bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Learn More
-            &rarr;</button>
         </div>
+
+
       </div>
     </div>
 
@@ -479,7 +501,7 @@
               including WordPress</span>
           </div>
         </div>
-        <div class="flex gap-6 flex-col items-center justify-center text-white md:w-1/4"md:>
+        <div class="flex gap-6 flex-col items-center justify-center text-white md:w-1/4" md:>
           <div class="border-2 border-white rounded-full h-20 w-20 flex items-center justify-center text-4xl">
             <i class="fa-solid fa-paintbrush"></i>
           </div>
@@ -594,7 +616,7 @@
             <div class="flex items-start flex-col">
               <span class="text-sm mt-2">Check out our</span>
               <span class="text-xl mb-2 uppercase font-bold">Facebook</span>
-            </div> 
+            </div>
           </div>
         </button>
         <button href="#" class="bg-[#ffffff30] px-4 w-full text-white">
@@ -603,7 +625,7 @@
             <div class="flex items-start flex-col">
               <span class="text-sm mt-2">Check out our</span>
               <span class="text-xl mb-2 uppercase font-bold">Twitter</span>
-            </div> 
+            </div>
           </div>
         </button>
       </div>
